@@ -69,11 +69,11 @@
   function secsToMins(seconds) {
     var newMinutes = 0;
     var newSeconds = 0;
-    if (seconds % 60 == 0) {
+    if (seconds % 60 === 0) {
       newMinutes = String(seconds / 60);
       newSeconds = "00";
     } else {
-      newMinutes = String(Math.floor( seconds / 60));
+      newMinutes = String(Math.floor(seconds / 60));
       newSeconds = seconds % 60;
       if (newSeconds < 10) {
         newSeconds = "0" + newSeconds;
